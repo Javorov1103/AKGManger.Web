@@ -1,0 +1,45 @@
+pt-login {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.ctrl-login-container {
+    display: table-cell;
+    vertical-align: middle;
+}
+.ctrl-login {
+    min-width: 320px;
+    margin: 0 auto;
+}
+.ctrl-login mat-form-field, .ctrl-login button[mat-raised-button] {
+    width: 100%;
+}
+.ctrl-login mat-card {
+    height: 100%;
+}
+.ctrl-login input.md-input-element {
+    position: relative;
+    bottom: 5px;
+}
+.ctrl-login .md-input-placeholder {
+    left: 3px;
+    top: 5px;
+}
+.ctrl-login .app-input-icon {
+    color: #999;
+}
+.ctrl-login .logo {
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+.ctrl-login .form-signin {
+    width: 260px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+@media (min-width: 480px) {
+    .ctrl-login {
+        width: 380px;
+   }
+}
