@@ -1,3 +1,34 @@
-<form [formGroup]="loginForm">
-
-</form>
+<div class="app-login">   
+<div class="ctrl-login-container">
+    <div class="ctrl-login uix-fullscreen-container-xs">
+       <mat-card>   
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <mat-form-field>
+                <span matPrefix>
+                    <i class="material-icons app-input-icon">business</i>&nbsp;
+                </span>
+                <input placeholder="Company" matInput formControlName="companyId">
+              </mat-form-field>
+            <mat-form-field>
+                <span matPrefix>
+                    <i class="material-icons app-input-icon">person</i>&nbsp;
+                </span>
+                <input placeholder="Username" matInput formControlName="username">
+              </mat-form-field>
+            <mat-form-field>
+                <span matPrefix>
+                    <i class="material-icons app-input-icon">vpn_key</i>&nbsp;
+                </span>
+                <input placeholder="Password" matInput formControlName="password">
+            </mat-form-field>
+                <mat-checkbox formControlName="rememberMe" color="primary">
+                    Remember me
+                </mat-checkbox>
+            <button type="submit" mat-raised-button color="primary">Login</button>
+          </form>
+       </mat-card>
+       </div>
+    </div>
+</div>
+            
+        

@@ -10,7 +10,8 @@ import { ServiceOrdersComponent } from './serviceorder.component';
 
 @NgModule({
   declarations: [
-    ServiceOrdersComponent
+    ServiceOrdersComponent,
+    ServiceordersListComponent
   ],
   imports: [
     ordersRouting,

@@ -11,9 +11,6 @@ export class ServiceordersListComponent implements OnInit {
   constructor(private orderSerivce: OrdersService) { }
 
   ngOnInit(): void {
-    this.orderSerivce.testApi().subscribe((data) => {
-      console.log(data);
-    });
   }
 
 }

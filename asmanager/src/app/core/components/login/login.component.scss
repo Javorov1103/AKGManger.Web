@@ -1,0 +1,58 @@
+.app-login {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.ctrl-login-container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ctrl-login {
+
+    min-width: 320px;
+    margin: 0 auto;    
+
+    mat-form-field,
+    button[mat-raised-button] {
+        width: 100%;
+    }
+
+    mat-card {
+        height: 100%;
+    }
+
+    input.md-input-element {
+        position: relative;
+        bottom: 5px;
+    }
+
+    .md-input-placeholder {
+        left: 3px;
+        top: 5px;
+    }
+
+    .app-input-icon { 
+        color: #999;
+    }
+
+    .logo {
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .form-signin
+    {
+        width: 260px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 480px) {
+    .ctrl-login {
+        width: 380px;
+    }
+}

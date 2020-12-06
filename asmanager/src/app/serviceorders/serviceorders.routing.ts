@@ -1,16 +1,26 @@
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuardService } from '../shared/services/auth-guard.service';
 import { ServiceOrdersComponent } from "./serviceorder.component";
 import { ServiceordersListComponent } from './serviceorders-list/serviceorders-list.component';
 
 const SERVICEORDERS_ROUTES: Routes = [
     {
         path: "",
-        component: ServiceOrdersComponent
+        component: ServiceOrdersComponent,
+        children: [
+            {
+                path: "",
+                redirectTo: 'list',
+                pathMatch: 'full'
+            },
+            {
+                path: "list",
+                component: ServiceordersListComponent,
+                canActivate: [AuthGuardService]
+            }
+        ]
     },
-    {
-        path: "list",
-        component: ServiceordersListComponent
-    }
+    
 ]
 
 export const ordersRouting = RouterModule.forChild(SERVICEORDERS_ROUTES);

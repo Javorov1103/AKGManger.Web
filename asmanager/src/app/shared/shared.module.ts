@@ -1,8 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { DxFormModule } from 'devextreme-angular/ui/form';
-import { DxButtonModule } from 'devextreme-angular/ui/button';
+import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatCheckboxModule} from '@angular/material/checkbox'
+import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatListModule} from '@angular/material/list';
+
 
 
 @NgModule({
@@ -10,11 +18,19 @@ import { DxButtonModule } from 'devextreme-angular/ui/button';
   imports: [
     CommonModule,
     RouterModule,
+    MatButtonModule
   ],
   exports: [
     RouterModule,
-    DxFormModule,
-    DxButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCheckboxModule,
+    MatCardModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule
   ]
 })
 export class SharedModule { }
