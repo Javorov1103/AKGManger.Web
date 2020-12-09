@@ -1,5 +1,5 @@
 import { RouterModule, Routes } from '@angular/router';
-import { AuthGuardService } from '../shared/services/auth-guard.service';
+import { AuthGuardService } from '../../services/auth-guard.service';
 import { ServiceOrdersComponent } from "./serviceorder.component";
 import { ServiceordersListComponent } from './serviceorders-list/serviceorders-list.component';
 

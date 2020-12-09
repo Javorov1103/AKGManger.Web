@@ -1,7 +1,7 @@
 <mat-nav-list class="side-nav uix-null">
 
     
-        <a mat-list-item #menuItem  routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+        <a mat-list-item routerLink="/dashboard" #menuItem  routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
             <mat-icon class="menu-item-icon">dashboard</mat-icon>
             <span class="menu-item-text">
                Home
@@ -9,13 +9,20 @@
         </a>
 
     <hr />
-
-    <!-- Time Registration -->
    
         <a mat-list-item #menuItem routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
             <mat-icon  class="menu-item-icon">add</mat-icon>
             <span class="menu-item-text">
                 Add
+            </span>
+        </a>
+
+        <hr />
+
+        <a mat-list-item routerLink="/serviceorders/list" #menuItem routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+            <mat-icon  class="menu-item-icon">view_list</mat-icon>
+            <span class="menu-item-text">
+                Orders
             </span>
         </a>
 </mat-nav-list>

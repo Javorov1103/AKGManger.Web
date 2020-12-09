@@ -1,9 +1,9 @@
 import { RouterModule, Routes } from "@angular/router";
-import { DashboardComponent } from './core/components/dashboard/dashboard.component';
-import { LoginComponent } from './core/components/login/login.component';
-import { MasterpageComponent } from './core/components/masterpage/masterpage.component';
-import { ServiceordersModule } from './serviceorders/serviceorders.module';
-import { AuthGuardService } from './shared/services/auth-guard.service';
+import { DashboardComponent } from './modules/core/components/dashboard/dashboard.component';
+import { LoginComponent } from './modules/core/components/login/login.component';
+import { MasterpageComponent } from './modules/core/components/masterpage/masterpage.component';
+import { ServiceordersModule } from './modules/serviceorders/serviceorders.module';
+import { AuthGuardService } from './services/auth-guard.service';
 
 const routes: Routes = [
     // {

@@ -7,7 +7,6 @@ import {ChangeDetectorRef, Component, OnDestroy} from '@angular/core';
   styleUrls: ['./masterpage.component.css']
 })
 export class MasterpageComponent implements OnDestroy {
-
   mobileQuery: MediaQueryList;
 
   private _mobileQueryListener: () => void;
