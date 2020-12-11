@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { OrdersService } from '../../core/services/orders.service';
 import { MatTableDataSource } from '@angular/material/table';
 
 export interface PeriodicElement {
@@ -30,7 +29,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class ServiceordersListComponent implements OnInit {
 
 
-  constructor(private orderSerivce: OrdersService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }

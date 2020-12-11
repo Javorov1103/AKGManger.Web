@@ -25,7 +25,7 @@ import { AuthService } from './modules/core/services/auth.service';
   ],
   providers: [
     HttpClient,
-    AuthService, 
+    AuthService,
     AuthGuardService,
     {
       provide: HTTP_INTERCEPTORS,
