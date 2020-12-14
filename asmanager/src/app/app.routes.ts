@@ -3,7 +3,6 @@ import { CommerceModule } from './modules/commerce/commerce.module';
 import { DashboardComponent } from './modules/core/components/dashboard/dashboard.component';
 import { LoginComponent } from './modules/core/components/login/login.component';
 import { MasterpageComponent } from './modules/core/components/masterpage/masterpage.component';
-import { ServiceordersModule } from './modules/serviceorders/serviceorders.module';
 import { AuthGuardService } from './services/auth-guard.service';
 
 const routes: Routes = [

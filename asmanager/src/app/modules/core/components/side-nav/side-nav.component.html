@@ -11,11 +11,18 @@
 
     <hr />
 
-    <a mat-list-item routerLink="/serviceorders/list" #menuItem routerLinkActive="active-link"
+    <a mat-list-item routerLink="/commerce/serviceorders" #menuItem routerLinkActive="active-link"
         [routerLinkActiveOptions]="{exact: true}">
         <mat-icon class="menu-item-icon">view_list</mat-icon>
         <span class="menu-item-text">
             Orders
+        </span>
+    </a>
+    <a mat-list-item routerLink="/commerce/clients" #menuItem routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon class="menu-item-icon">view_list</mat-icon>
+        <span class="menu-item-text">
+            Clients
         </span>
     </a>
 </mat-nav-list>
