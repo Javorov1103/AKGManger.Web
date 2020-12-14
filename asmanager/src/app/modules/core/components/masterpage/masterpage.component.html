@@ -14,7 +14,7 @@
     </div>
   
   </mat-drawer-container> -->
-  <!-- <button type="button" mat-button (click)="sidenav.toggle()">
+<!-- <button type="button" mat-button (click)="sidenav.toggle()">
     Toggle sidenav
   </button>
   <mat-sidenav-container >
@@ -33,26 +33,25 @@
       </mat-sidenav-content>
   </mat-sidenav-container> -->
 
-  <div class="example-container" [class.example-is-mobile]="mobileQuery.matches" >
-    <mat-toolbar color="primary" class="example-toolbar">
-      <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
-      <h1 class="example-app-name">Auto Service Manager</h1>
-    </mat-toolbar>
-  
-    <mat-sidenav-container class="example-sidenav-container"
-                           [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-      <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
-                   [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
-        <app-side-nav>
-        </app-side-nav>
-      </mat-sidenav>
-  
-      <mat-sidenav-content>
-        <main>
-          <router-outlet></router-outlet>
-        </main>
-      </mat-sidenav-content>
-    </mat-sidenav-container>
-  </div>
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+  <mat-toolbar color="primary" class="example-toolbar">
+    <button mat-icon-button (click)="snav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1 class="example-app-name">Автосервиз</h1>
+  </mat-toolbar>
 
+  <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
+      fixedTopGap="56">
+      <app-side-nav>
+      </app-side-nav>
+    </mat-sidenav>
 
+    <mat-sidenav-content>
+      <main>
+        <router-outlet></router-outlet>
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

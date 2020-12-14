@@ -1,13 +1,40 @@
 <div class="app-client-edit">
     <mat-card>
         <form [formGroup]="clientForm" (ngSubmit)="updateClient()">
-            <mat-form-field appearance="outline">
-                <mat-label>Име:</mat-label>
-                <input matInput placeholder="Име">
-                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-            </mat-form-field>
-            <button type="submit" mat-raised-button color="primary">SAVE</button>
+            <div class="radioGroup">
+                <mat-radio-group aria-label="Select an option" formControlName="clientType">
+                    <mat-radio-button value="1">Физ лице</mat-radio-button>
+                    <mat-radio-button value="2">Юрид лице</mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Име:</mat-label>
+                    <input matInput placeholder="Име" formControlName="name">
+                    <mat-icon matSuffix>people</mat-icon>
+                </mat-form-field>
+
+            </div>
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Адрес:</mat-label>
+                    <input matInput placeholder="Адрес" formControlName="address">
+                    <mat-icon matSuffix>home</mat-icon>
+                </mat-form-field>
+            </div>
+
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Телефон:</mat-label>
+                    <input matInput placeholder="Име" type="tel" formControlName="phone">
+                    <mat-icon matSuffix>phone</mat-icon>
+                </mat-form-field>
+            </div>
+            <div class="radioGroup">
+                <button type="submit" mat-raised-button color="primary">Запазване</button>
+            </div>
+
         </form>
-       
+
     </mat-card>
 </div>

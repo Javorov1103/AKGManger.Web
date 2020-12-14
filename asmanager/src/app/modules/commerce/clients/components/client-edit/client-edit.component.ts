@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-client-edit',
   templateUrl: './client-edit.component.html',
-  styleUrls: ['./client-edit.component.css']
+  styleUrls: ['./client-edit.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ClientEditComponent implements OnInit {
 
@@ -22,7 +23,10 @@ export class ClientEditComponent implements OnInit {
 
   private buildForm() {
     this.clientForm = this.formBuilder.group({
-        name:[null,Validators.required],
+      name: [null, Validators.required],
+      address: [null],
+      phone: [null],
+      clientType: ['1']
     });
   }
 

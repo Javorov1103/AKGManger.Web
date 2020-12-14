@@ -1,0 +1,21 @@
+mat-form-field {
+    padding-left: 10px;
+}
+
+/* mat-radio-group{
+    padding-left: 10px;
+} */
+
+mat-radio-button {
+    padding-right: 10px;
+}
+
+.radioGroup {
+    margin-bottom: 21px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.app-client-edit .mat-form-field-wrapper {
+    margin-bottom: -1.25em !important;
+}

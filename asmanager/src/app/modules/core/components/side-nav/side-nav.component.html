@@ -1,28 +1,29 @@
-<mat-nav-list class="side-nav uix-null">
+<div class="app-side-nav">
+    <mat-nav-list class="side-nav uix-null">
 
+        <a mat-list-item routerLink="/dashboard" #menuItem routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{exact: true}">
+            <mat-icon class="menu-item-icon">dashboard</mat-icon>
+            <span class="menu-item-text">
+                Начало
+            </span>
+        </a>
 
-    <a mat-list-item routerLink="/dashboard" #menuItem routerLinkActive="active-link"
-        [routerLinkActiveOptions]="{exact: true}">
-        <mat-icon class="menu-item-icon">dashboard</mat-icon>
-        <span class="menu-item-text">
-            Home
-        </span>
-    </a>
+        <hr />
 
-    <hr />
-
-    <a mat-list-item routerLink="/commerce/serviceorders" #menuItem routerLinkActive="active-link"
-        [routerLinkActiveOptions]="{exact: true}">
-        <mat-icon class="menu-item-icon">view_list</mat-icon>
-        <span class="menu-item-text">
-            Orders
-        </span>
-    </a>
-    <a mat-list-item routerLink="/commerce/clients" #menuItem routerLinkActive="active-link"
-        [routerLinkActiveOptions]="{exact: true}">
-        <mat-icon class="menu-item-icon">view_list</mat-icon>
-        <span class="menu-item-text">
-            Clients
-        </span>
-    </a>
-</mat-nav-list>
+        <a mat-list-item routerLink="/commerce/serviceorders" #menuItem routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{exact: true}">
+            <mat-icon class="menu-item-icon">view_list</mat-icon>
+            <span class="menu-item-text">
+                Сервизни поръчки
+            </span>
+        </a>
+        <a mat-list-item routerLink="/commerce/clients" #menuItem routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{exact: true}">
+            <mat-icon class="menu-item-icon">people</mat-icon>
+            <span class="menu-item-text">
+                Клиенти
+            </span>
+        </a>
+    </mat-nav-list>
+</div>
