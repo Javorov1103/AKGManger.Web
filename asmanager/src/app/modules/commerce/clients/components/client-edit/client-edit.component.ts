@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ClientService } from '../../services/client.service';
 
 @Component({
   selector: 'app-client-edit',
@@ -9,7 +10,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class ClientEditComponent implements OnInit {
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder, private clientService: ClientService) { }
 
   public clientForm: FormGroup;
 
@@ -18,7 +19,14 @@ export class ClientEditComponent implements OnInit {
   }
 
   updateClient() {
-    console.log(this.clientForm.value)
+    // console.log(this.clientForm.value)
+
+    if(!this.clientForm.value.name) {
+        return;
+    }
+
+    this.clientService.saveClient(this.clientForm.value);
+
   }
 
   private buildForm() {
@@ -26,7 +34,7 @@ export class ClientEditComponent implements OnInit {
       name: [null, Validators.required],
       address: [null],
       phone: [null],
-      clientType: ['1']
+      isCompany: ['']
     });
   }
 

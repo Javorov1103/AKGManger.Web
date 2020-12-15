@@ -13,6 +13,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatRadioModule } from '@angular/material/radio';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 
 
@@ -38,7 +39,8 @@ import { MatRadioModule } from '@angular/material/radio';
     MatListModule,
     MatTableModule,
     ReactiveFormsModule,
-    MatRadioModule
+    MatRadioModule,
+    MatSlideToggleModule
   ]
 })
 export class SharedModule { }
